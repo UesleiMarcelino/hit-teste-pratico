@@ -1,0 +1,11 @@
+<div class="form-container">
+  <form>
+    <div class="input-group">
+      <input type="text" placeholder="Nome*" class="input-field" required>
+      <input type="email" placeholder="E-mail*" class="input-field" required>
+    </div>
+    <textarea placeholder="Mensagem*" class="textarea-field" required></textarea>
+    <button class="submit-button" (click)="sendContatc()">ENVIAR</button>
+  </form>
+  <p *ngIf="sendForm == true">Formulario enviado com sucesso</p>
+</div>
